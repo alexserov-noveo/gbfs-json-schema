@@ -42,7 +42,7 @@
                       "vehicle_types",
                       "station_information",
                       "station_status",
-                      "free_bike_status",
+                      "vehicle_status",
                       "system_hours",
                       "system_alerts",
                       "system_calendar",
