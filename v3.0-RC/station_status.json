@@ -32,7 +32,7 @@
                 "description": "Identifier of a station.",
                 "type": "string"
               },
-              "num_bikes_available": {
+              "num_vehicles_available": {
                 "description": "Number of vehicles of any type physically available for rental at the station.",
                 "type": "integer",
                 "minimum": 0
@@ -60,7 +60,7 @@
                   ]
                 }
               },
-              "num_bikes_disabled": {
+              "num_vehicles_disabled": {
                 "description": "Number of disabled vehicles of any type at the station.",
                 "type": "integer",
                 "minimum": 0
@@ -120,7 +120,7 @@
             },
             "required": [
               "station_id",
-              "num_bikes_available",
+              "num_vehicles_available",
               "is_installed",
               "is_renting",
               "is_returning",
