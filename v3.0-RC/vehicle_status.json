@@ -20,15 +20,15 @@
       "const": "3.0"
     },
     "data": {
-      "description": "Array that contains one object per bike as defined below.",
+      "description": "Array that contains one object per vehicle as defined below.",
       "type": "object",
       "properties": {
-        "bikes": {
+        "vehicles": {
           "type": "array",
           "items": {
             "type": "object",
             "properties": {
-              "bike_id": {
+              "vehicle_id": {
                 "description": "Rotating (as of v2.0) identifier of a vehicle.",
                 "type": "string"
               },
@@ -147,7 +147,7 @@
               }
             ],
             "required": [
-              "bike_id",
+              "vehicle_id",
               "is_reserved",
               "is_disabled"
             ]
@@ -155,7 +155,7 @@
         }
       },
       "required": [
-        "bikes"
+        "vehicles"
       ]
     }
   },
