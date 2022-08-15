@@ -61,7 +61,8 @@
         },
         "phone_number": {
           "description": "A single voice telephone number for the specified system that presents the telephone number as typical for the system's service area.",
-          "type": "string"
+          "type": "string",
+          "pattern": "^\\+?[1-9]\\d{1,14}$"
         },
         "email": {
           "description": "Email address actively monitored by the operator's customer service department.",
