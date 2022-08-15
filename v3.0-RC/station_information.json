@@ -68,6 +68,10 @@
                 "description": "Postal code where station is located.",
                 "type": "string"
               },
+              "station_opening_hours": {
+                "description": "ours of operation for the station in OSM opening_hours",
+                "type": "string"
+              },
               "rental_methods": {
                 "description": "Payment methods accepted at this station.",
                 "type": "array",
@@ -147,13 +151,6 @@
                 "type": "integer",
                 "minimum": 0
               },
-              "vehicle_capacity": {
-                "description": "An object where each key is a vehicle_type_id and the value is a number presenting the total number of vehicles of this type that can park within the station_area (added in v2.1-RC).",
-                "type": "object",
-                "additionalProperties": {
-                  "type": "number"
-                }
-              },
               "is_valet_station": {
                 "description": "Are valet services provided at this station? (added in v2.1-RC)",
                 "type": "boolean"
@@ -183,7 +180,14 @@
                   }
                 }
               },
-              "vehicle_type_capacity": {
+              "vehicle_type_area_capacity": {
+                "description": "An object where each key is a vehicle_type_id and the value is a number representing the total docking points installed at this station for each vehicle type (added in v2.1-RC).",
+                "type": "object",
+                "additionalProperties": {
+                  "type": "number"
+                }
+              },
+              "vehicle_type_dock_capacity": {
                 "description": "An object where each key is a vehicle_type_id and the value is a number representing the total docking points installed at this station for each vehicle type (added in v2.1-RC).",
                 "type": "object",
                 "additionalProperties": {
